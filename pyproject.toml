@@ -9,7 +9,7 @@ description = "Generate a synthetic twin of your CSV, preserving per-column dist
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
-authors = [{ name = "JaydenCJ" }]
+authors = [{ name = "JaydenCJ", email = "aisingioro.kiyon@gmail.com" }]
 keywords = ["csv", "synthetic-data", "test-data", "privacy", "anonymization", "data-masking", "deterministic"]
 classifiers = [
     "Development Status :: 3 - Alpha",
