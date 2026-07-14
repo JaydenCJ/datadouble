@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="400" viewBox="0 0 760 400" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">
+  <rect width="760" height="400" rx="10" fill="#0d1117"/>
+  <rect width="760" height="34" rx="10" fill="#161b22"/>
+  <circle cx="22" cy="17" r="6" fill="#ff5f56"/>
+  <circle cx="42" cy="17" r="6" fill="#ffbd2e"/>
+  <circle cx="62" cy="17" r="6" fill="#27c93f"/>
+  <text x="380" y="22" fill="#8b949e" text-anchor="middle" font-size="12">datadouble — synthetic CSV twins</text>
+  <g fill="#c9d1d9">
+    <text x="20" y="62"><tspan fill="#7ee787">$</tspan> datadouble twin orders.csv -o twin.csv --seed 42</text>
+    <text x="20" y="84" fill="#8b949e">wrote twin.csv (200 rows, 8 columns, seed 42)</text>
+    <text x="20" y="112"><tspan fill="#7ee787">$</tspan> head -3 twin.csv</text>
+    <text x="20" y="134" fill="#8b949e">order_id,created,region,status,amount,qty,email,coupon</text>
+    <text x="20" y="154" fill="#8b949e">QPI-5515,2026-04-24,west,refunded,78.66,5,ajrv@ygaoeop.tdie,</text>
+    <text x="20" y="174" fill="#8b949e">CVY-1394,2026-04-20,east,paid,78.85,1,vitz@ulowjth.smee,</text>
+    <text x="20" y="202"><tspan fill="#7ee787">$</tspan> datadouble compare orders.csv twin.csv</text>
+    <text x="20" y="224" fill="#79c0ff">column     type         nulls a-&gt;b    metric         status</text>
+    <text x="20" y="244" fill="#8b949e">order_id   text         0.000-&gt;0.000  tv 0.000       <tspan fill="#7ee787">ok</tspan></text>
+    <text x="20" y="264" fill="#8b949e">created    date         0.000-&gt;0.000  q-shift 0.019  <tspan fill="#7ee787">ok</tspan></text>
+    <text x="20" y="284" fill="#8b949e">amount     float        0.000-&gt;0.000  q-shift 0.009  <tspan fill="#7ee787">ok</tspan></text>
+    <text x="20" y="304" fill="#8b949e">email      text         0.000-&gt;0.000  tv 0.060       <tspan fill="#7ee787">ok</tspan></text>
+    <text x="20" y="324" fill="#8b949e">coupon     categorical  0.625-&gt;0.640  tv 0.058       <tspan fill="#7ee787">ok</tspan></text>
+    <text x="20" y="352" fill="#7ee787">TWIN OK: 8/8 shared columns within tolerance</text>
+    <text x="20" y="380" fill="#8b949e">same distributions, same null rates — none of your values.</text>
+  </g>
+</svg>
